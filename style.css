@@ -1,0 +1,10 @@
+body {
+  font-family: 'helvetica neue', arial, sans-serif;
+  font-weight: 300;
+  background-image: url(linedpaper.png);
+  background-repeat: repeat;
+}
+#wrapper {
+  width: 960px;
+  margin: 20px auto 20px auto;
+}
