@@ -1,48 +1,100 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>About me</title>
+  <title>Legal Desk</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Include bootstrap stylesheet, but overwrite with own style where necessary -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Use Font Awesome to be able to use cool icons just as regular text smybols -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
+
 <body>
-  <div id="wrapper">
-    <div>
-      <h1 id="headline">Matthias Printz</h1>
-      <p id="headline2"><strong>- Cologne - Barcelona - Chicago -</strong></p>
-      <p id="headline3">- Germany - Spain - USA -</p>
-      <!--Text can be declared as bold either in HTML here or in CSS in the style sheet. See example in the definition of 'headline3'-->
+  <div class="container">
+
+    <div class="alert alert-info" role="alert">Legal Desk</div>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><i class="fa fa-home"></i></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Private Documents</a></li>
+            <li><a href="#">Business Documents</a></li>  
+            <!--<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">About Legal Desk</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Related Websites</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </li>-->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#"<si class="fa fa-shopping-cart"></i> Shopping Cart</button><span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="jumbotron">
+      <!-- <img src="signature.jpg" class="background"> -->
+      <h1>Be your own advocate</h1>
+      <p>Legal Desks gives you the power to easily and inexpensively draft your own legal documents ready to be signed.</p>
+      <p><a class="btn btn-danger btn-lg" href="http://www.google.com" role="button">Try it for free</a></p>
     </div>
-    <div>
-      <h2 class="subheader">Summary</h2>
-      <p class="text">Consultant, Engineer and Electrician made in Germany.<br>
-        MBA candidate at <a href="http://www.esade.edu/ftmba/eng"> ESADE Business School</a>, Barcelona, Spain.<br>
-        Exchange student at <a href="http://www.kellogg.northwestern.edu/programs/full-time-mba.aspx"> Kellogg School of Management</a>, Chicago, USA.
-      </p>
+
+    <div class="row">
+      <div class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <div class="caption">
+            <h3>How it works</h3>
+            <p>Legal Desk enables you to make your own legal documents.<br><br>
+              You will be asked the same questions that a lawyer would ask.<br><br>
+              Based on your answers and choices a legal document is generated automatically and sent to you by e-mail immediately.
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-4 col-md-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>Your benefits</h3>
+          <p>Legal Desk documents are of equally high quality as the ones drafted by a lawyer, but cost only a fraction of the price.<br><br>
+              You can make and receive your document in the privacy of your own home in a matter of minutes.<br><br>
+              Legal Desk is available around the clock, so you can make your document when it suits you.
+          </p>
+        </div>
+      </div>
     </div>
-    <div>
-      <p><br><br><br><br></p>
-      <p class="picture"><img src="me.jpg"></p>
-      <p><br></p>
+    <div class="col-sm-4 col-md-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>Satisfaction Guarantee</h3>
+          <p>Press "Try it for free" above to see how the automated form works and receive a free test document.<br><br>
+              You can always start filling in any of the forms, you will only have to pay for your document when the form is completed and you are satisfied with the content.<br><br>
+              We provide full return over the course of two weeks!
+          </p>
+        </div>
+      </div>
     </div>
-    <div>
-      <h2 class="subheader">Interests</h2>
-      <ul>
-        <li class="text">*B*ooks on the new digital age</li>
-        <li class="text">*B*all games at American Colleges</li>
-        <li class="text">*B*urgers and other food</li>
-      </ul>
-    </div>
-    <p><br></p>
-    <div>
-      <h3>Connect With Me</h3>
-      <P class="socialmedia">
-        <a href="mailto:matthias.printz@icloud.com"><img src="mail.jpg"></a>
-        <a href="http://twitter.com/MatthiasPrintz"><img src="twitter.jpg"></a>
-        <a href="https://es.linkedin.com/in/matthiasprintz"><img src="linkedin.jpg"></a>
-      </P>
-    </div>
-  </div>
+  </div> <!-- /.container -->
 </body>
 </html>
