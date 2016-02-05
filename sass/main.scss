@@ -1,0 +1,31 @@
+/*	
+*	############################################################################
+*	
+*	CVilized Resume/CV HTML Template Style
+*	---------------------------------------------------------------------
+*
+*	Version		1.1
+*	Author		The Develovers
+*	Copyright	Copyright 2015 The Develovers
+*	Website: 	https://themeineed.com
+*	
+*	############################################################################
+*/
+
+
+// Import main
+@import "vendor/timeline";
+@import "modules/variables";
+@import "modules/mixins";
+
+
+// Import partials
+@import "partials/base";
+@import "partials/navigation";
+@import "partials/header";
+@import "partials/about-me";
+@import "partials/skills";
+@import "partials/resume";
+@import "partials/projects";
+@import "partials/contacts";
+@import "partials/footer";

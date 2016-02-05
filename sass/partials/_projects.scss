@@ -1,0 +1,151 @@
+/*------------------------------------------------*/
+/*	Projects
+/*------------------------------------------------*/
+
+.projects {
+	@include background-size(cover);
+
+	background: {
+		image: image-url("project-bg.png");
+		repeat: no-repeat;
+		position: center -20em;
+	}
+
+	@include max-screen(1440px) {
+		background-position: center 0;
+	}
+}
+
+.layout-boxed .projects {
+	background-position: center 0;
+}
+
+/* project grid */
+.project-grid {
+	@include inline-block-list;
+
+	max-width: 1300px;
+	margin: 35px auto 0 auto;
+	text-align: center;
+
+	@include max-screen(31.5em) {
+		padding: 10px 10px 0 10px;
+	}
+
+	li {
+		margin: 0 0 50px 0;
+		text-align: left;
+		position: relative;
+		white-space: inherit;
+
+		@include max-screen(31.5em) {
+			width: 100%;
+			min-width: 300px;
+		}
+
+		@include max-screen(991px) {
+			display: block;
+		}
+	}
+
+	figure {
+		margin: 0;
+		position: relative;
+
+		img {
+			width: 100%;
+			display: block;
+			position: relative;
+
+			@include min-screen(992px) {
+				max-width: 100%;
+			}
+		}
+
+		.project-item-info {
+			font-weight: 300;
+
+			.sub-heading {
+				font-size: 1.1em;
+				line-height: 1;
+				color: #fff;
+			}
+
+			@include max-screen(992px) {
+				background-color: rgba(0, 0, 0, 0.7);
+				padding: 20px;
+				color: #FFF;
+			}
+		}
+	}
+
+	figcaption {
+		top: 0;
+		left: 0;
+		
+		@include min-screen(992px) {
+			position: absolute;
+			background: rgba(#d2d2d2, 0.1);
+		}
+	}
+}
+
+/* effect */
+@include min-screen(992px) {
+
+	.project-effect-shrink {
+		figure {
+			img {
+				@include single-transition(transform, 0.4s);
+				
+				z-index: 10;
+			}
+
+			&:hover {
+
+				img {
+					@include transform(scale(0.4));
+				}
+
+				figcaption {
+					@include opacity(1);
+					@include transform(scale(1))
+				}
+			}
+
+			.project-item-info {
+				width: 100%;
+				position: absolute;
+				bottom: 5px;
+				padding: 0 20px;
+
+				p {
+					font-size: 0.9em;
+					color: #fff;
+					margin-bottom: 5px;
+				}
+
+				a {
+					position: absolute;
+					right: 20px;
+					top: 10px;
+					padding: 7px 12px;
+					font-size: 0.8em;
+					color: lighten($secondary-accent-color, 40%);
+				}
+			}
+		}
+
+		figcaption {
+			@include opacity(0);
+			@include backface-visibility(hidden);
+			@include transform(scale(0.7));
+			@include transition(transform 0.4s, opacity 0.4s);
+
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+
+

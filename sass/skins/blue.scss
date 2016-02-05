@@ -1,0 +1,37 @@
+/* Skin: Blue */
+
+@import "modules/variables";
+@import "modules/mixins";
+
+// base
+$primary-accent-color: #065699;
+$secondary-accent-color: #3c3c3c;
+$base-heading-font-color: #065699;
+$base-icon-color: lighten($primary-accent-color, 10%);
+
+// section background colors
+$about-me-bg-color: #fff;
+$skills-bg-color: #444;
+$resume-bg-color: #fff;
+$contacts-bg-color: #fff;
+
+// skill charts
+$chart-font-color: #fff;
+
+// timeline
+$bg-line-url: "vertical-line-blue.png";
+$event-border-color: #a9a9a9;
+$month-text-color: #a9a9a9;
+
+// contact form
+$field-bg-color: #efefef;
+$placeholder-color: #c3c3c3;
+$field-border-color: #dddddd;
+$field-text-color: #808080;
+
+// footer
+$footer-bg-color: #444;
+$footer-text-color: #fff;
+
+@import "_skin-styles";
+

@@ -1,0 +1,160 @@
+/* Skin: Sea Green */
+/* general */
+a {
+  color: #3F7577;
+}
+a:hover, a:focus {
+  color: #519698;
+}
+
+.btn-default {
+  background-color: #3c3c3c;
+}
+.btn-default:hover, .btn-default:active, .btn-default:focus {
+  background-color: #444444;
+}
+
+.btn-primary,
+.btn-primary[disabled],
+.btn-primary.disabled {
+  background-color: #3F7577;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:active,
+.btn-primary[disabled]:focus,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:active,
+.btn-primary.disabled:focus {
+  background-color: #447f81;
+  color: #fff;
+}
+
+.navbar-default {
+  background-color: #3F7577;
+}
+.navbar-default .navbar-nav li a:hover {
+  color: #fff;
+  background-color: #519698;
+}
+.navbar-default .navbar-nav li.active a {
+  background-color: #519698;
+}
+.navbar-default .navbar-nav li.active a:hover, .navbar-default .navbar-nav li.active a:focus {
+  color: #fff;
+  background-color: #519698;
+}
+
+.section .heading {
+  color: #3F7577;
+}
+
+.glyphicon,
+i {
+  color: #519698;
+}
+
+/* section background color */
+.skills {
+  background-color: #444;
+}
+
+.about-me {
+  background-color: #F2FEFF;
+}
+
+.resume {
+  background: #F2FEFF;
+}
+
+.contacts {
+  background: #F2FEFF;
+}
+
+/* skills */
+.skill-chart .chart-title {
+  color: #fff;
+}
+
+.pie-chart .percent {
+  color: #fff;
+}
+
+/* timeline */
+.timeline {
+  background-image: url('../../img/vertical-line-seagreen.png?1425302824');
+}
+.timeline .year {
+  background: #3F7577;
+  color: #F2FEFF;
+}
+.timeline .month {
+  color: #a9a9a9;
+}
+.timeline .event {
+  background: #F2FEFF;
+  border-color: #B4C1C2;
+}
+.timeline .event:hover {
+  background: #F2FEFF;
+}
+.timeline .event:hover:after {
+  background: #3c3c3c;
+}
+.timeline .event:after {
+  background: #3F7577;
+  border-color: #F2FEFF;
+}
+.timeline .heading {
+  color: #3c3c3c;
+}
+
+/* projects */
+@media screen and (min-width: 992px) {
+  .project-effect-shrink figure .project-item-info a {
+    color: #a2a2a2;
+  }
+}
+/* contacts */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  background-color: #EBF6F7;
+  border: 1px solid #C6DADB;
+  color: #7C8D8E;
+}
+.contact-form input[type="text"]::-webkit-input-placeholder,
+.contact-form input[type="email"]::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #B2CACB;
+}
+.contact-form input[type="text"]:-moz-placeholder,
+.contact-form input[type="email"]:-moz-placeholder,
+.contact-form textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #B2CACB;
+}
+.contact-form input[type="text"]::-moz-placeholder,
+.contact-form input[type="email"]::-moz-placeholder,
+.contact-form textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #B2CACB;
+}
+.contact-form input[type="text"]:-ms-input-placeholder,
+.contact-form input[type="email"]:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #B2CACB;
+}
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border: 1px solid #87b1b4 !important;
+}
+
+/* footer */
+.footer {
+  background-color: #444;
+  color: #fff;
+}

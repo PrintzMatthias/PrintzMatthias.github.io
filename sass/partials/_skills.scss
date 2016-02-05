@@ -1,0 +1,49 @@
+/*------------------------------------------------*/
+/*	Skills
+/*------------------------------------------------*/
+
+.skills {
+	background-color: $skills-bg-color;
+}
+
+.skill-chart {
+	text-align: center;
+
+	.chart-title {
+		display: block;
+		font-size: 24px;
+		color: darken($skills-bg-color, 50%);
+
+		@include max-screen(768px) {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+.pie-chart {
+	@include inline-block;
+
+	position: relative;
+	width: 180px;
+	margin-bottom: 20px;
+
+	canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.percent {
+		@include inline-block;
+
+		line-height: 180px;
+		z-index: 2;
+		font-size: 18px;
+		font-weight: 300;
+		color: darken($skills-bg-color, 50%);
+
+		&:after {
+			margin-left: 0.1em;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+/*------------------------------------------------*/
+/*	About Me
+/*------------------------------------------------*/
+
+.about-me {
+	background-color: $about-me-bg-color;
+}
+
+.social {
+	.sub-heading {
+		margin-top: 0;
+
+		@include min-screen(768px) {
+			@include inline-block;
+		}
+	}
+}
+
+.interest {
+	margin: 30px 0;
+
+	.sub-heading {
+		margin-bottom: 15px;
+
+		.glyphicon {
+			margin-right: 5px;
+		}
+	}
+}
+
+ul.social-icons {
+	@include inline-list;
+
+	@include min-screen(768px) {
+		position: relative;
+		top: -3px;
+		left: 6px;
+	}
+
+	li {
+		padding: 10px;
+
+		a {
+			@include inline-block;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	i {
+		font-size: 22px;
+
+		&:hover {
+			color: darken($base-icon-color, 20%);
+		}
+	}
+}
+

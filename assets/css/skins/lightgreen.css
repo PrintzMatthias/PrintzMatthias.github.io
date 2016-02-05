@@ -1,0 +1,160 @@
+/* Skin: Light Green */
+/* general */
+a {
+  color: #8AA026;
+}
+a:hover, a:focus {
+  color: #aec930;
+}
+
+.btn-default {
+  background-color: #3c3c3c;
+}
+.btn-default:hover, .btn-default:active, .btn-default:focus {
+  background-color: #444444;
+}
+
+.btn-primary,
+.btn-primary[disabled],
+.btn-primary.disabled {
+  background-color: #8AA026;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:active,
+.btn-primary[disabled]:focus,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:active,
+.btn-primary.disabled:focus {
+  background-color: #95ac29;
+  color: #fff;
+}
+
+.navbar-default {
+  background-color: #8AA026;
+}
+.navbar-default .navbar-nav li a:hover {
+  color: #fff;
+  background-color: #aec930;
+}
+.navbar-default .navbar-nav li.active a {
+  background-color: #aec930;
+}
+.navbar-default .navbar-nav li.active a:hover, .navbar-default .navbar-nav li.active a:focus {
+  color: #fff;
+  background-color: #aec930;
+}
+
+.section .heading {
+  color: #8AA026;
+}
+
+.glyphicon,
+i {
+  color: #aec930;
+}
+
+/* section background color */
+.skills {
+  background-color: #444;
+}
+
+.about-me {
+  background-color: #FCFFE4;
+}
+
+.resume {
+  background: #FCFFE4;
+}
+
+.contacts {
+  background: #FCFFE4;
+}
+
+/* skills */
+.skill-chart .chart-title {
+  color: #fff;
+}
+
+.pie-chart .percent {
+  color: #fff;
+}
+
+/* timeline */
+.timeline {
+  background-image: url('../../img/vertical-line-lightgreen.png?1425277752');
+}
+.timeline .year {
+  background: #8AA026;
+  color: #FCFFE4;
+}
+.timeline .month {
+  color: #a9a9a9;
+}
+.timeline .event {
+  background: #FCFFE4;
+  border-color: #BABDA1;
+}
+.timeline .event:hover {
+  background: #FCFFE4;
+}
+.timeline .event:hover:after {
+  background: #3c3c3c;
+}
+.timeline .event:after {
+  background: #8AA026;
+  border-color: #FCFFE4;
+}
+.timeline .heading {
+  color: #3c3c3c;
+}
+
+/* projects */
+@media screen and (min-width: 992px) {
+  .project-effect-shrink figure .project-item-info a {
+    color: #a2a2a2;
+  }
+}
+/* contacts */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  background-color: #E9ECD3;
+  border: 1px solid #CFD2BC;
+  color: #787B64;
+}
+.contact-form input[type="text"]::-webkit-input-placeholder,
+.contact-form input[type="email"]::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #C2C7A5;
+}
+.contact-form input[type="text"]:-moz-placeholder,
+.contact-form input[type="email"]:-moz-placeholder,
+.contact-form textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #C2C7A5;
+}
+.contact-form input[type="text"]::-moz-placeholder,
+.contact-form input[type="email"]::-moz-placeholder,
+.contact-form textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #C2C7A5;
+}
+.contact-form input[type="text"]:-ms-input-placeholder,
+.contact-form input[type="email"]:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #C2C7A5;
+}
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border: 1px solid #a3a97f !important;
+}
+
+/* footer */
+.footer {
+  background-color: #444;
+  color: #fff;
+}

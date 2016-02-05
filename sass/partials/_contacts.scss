@@ -1,0 +1,60 @@
+/*------------------------------------------------*/
+/*	Contacts
+/*------------------------------------------------*/
+
+.contacts {
+	background-color: $contacts-bg-color;
+
+	.google-map {
+		margin: 40px 0;
+	}
+}
+
+/* contact form */
+.contact-form {
+	margin-bottom: 40px;
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		@include border-radius(3px);
+		@include placeholder-color(darken($contacts-bg-color, 10%));
+		@include box-shadow(none !important);
+
+		background-color: lighten($contacts-bg-color, 5%);
+		border: 1px solid darken($contacts-bg-color, 5%);
+		color: darken($contacts-bg-color, 30%);
+
+		&:focus {
+			outline: none;
+			border: 1px solid darken($contacts-bg-color, 20%) !important;
+		}
+	}
+}
+
+div[class*="col-"] > .form-group {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* parsley erorr list */
+.parsley-errors-list {
+	@include inline-block-list;
+
+	li {
+		color: #D9534F;
+		font-size: 0.9em;
+		margin-top: 3px;
+	}
+}
+
+/* google maps */
+.map-canvas {
+	height: $map-height;
+}
+
+.address-lines {
+	margin-top: 40px;
+}
+
+

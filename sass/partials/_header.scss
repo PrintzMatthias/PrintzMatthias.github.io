@@ -1,0 +1,81 @@
+/*------------------------------------------------*/
+/*	Header
+/*------------------------------------------------*/
+
+/* hero-unit */
+.hero-unit {
+	@include background-size(cover);
+
+	background: {
+		image: image-url($hero-img-background);
+		repeat: no-repeat;
+		position: top center;
+	}
+
+	padding-top: 7em;
+	padding-bottom: 7em;
+	text-align: center;
+
+	@include min-screen(992px) {
+		text-align: left;
+	}
+}
+
+.header {
+	margin-bottom: 0;
+	color: $base-font-color-light;
+	
+	.right {
+		padding-top: 5em;
+	}
+
+	.heading {
+		font-family: $secondary-font-family-bold;
+		font-size: 2.5em;
+		margin-bottom: 0;
+
+		@include min-screen(768px) {
+			font-size: 5em;
+		}
+	}
+
+	p {
+		font-size: 2.3em;
+		margin-bottom: 55px;
+		line-height: 1.5;
+		font-weight: 200;
+	}
+
+	.btn {
+		margin-right: 0;
+		margin-bottom: 20px;
+		padding: 14px 24px;
+		display: block;
+
+		@include min-screen(768px) {
+			@include inline-block;
+			margin-right: 20px;
+		}
+	}
+}
+
+/* avatar */
+.avatar {
+	@include border-radius(50%);
+	@include inline-block;
+
+	border: 20px solid rgba(#000, 0.1);
+
+	img {
+		@include border-radius(50%);
+
+		width: 100%;
+		margin: 0 auto;
+
+		@include min-screen(992px) {
+			margin: 0;
+		}
+	}
+}
+
+

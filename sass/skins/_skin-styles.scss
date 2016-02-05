@@ -1,0 +1,169 @@
+// -----------------------------------------------------
+// SKIN STYLES TEMPLATE
+// This file should be imported in each skin file
+// -----------------------------------------------------
+
+
+/* general */
+a {
+	color: $primary-accent-color;
+
+	&:hover,
+	&:focus {
+		color: lighten($primary-accent-color, 10%);
+	}
+
+}
+
+.btn-default {
+	background-color: $secondary-accent-color;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: lighten($secondary-accent-color, 3%);
+	}
+}
+
+.btn-primary,
+.btn-primary[disabled],
+.btn-primary.disabled {
+	background-color: $primary-accent-color;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: lighten($primary-accent-color, 3%);
+		color: $base-font-color-light;
+	}
+}
+
+.navbar-default {
+	background-color: $primary-accent-color;
+
+	.navbar-nav li a {
+		&:hover {
+			color: $base-font-color-light;
+			background-color: lighten($primary-accent-color, 10%);
+		}
+	}
+
+	.navbar-nav li.active a {
+		background-color: lighten($primary-accent-color, 10%);
+
+		&:hover, &:focus {
+			color: $base-font-color-light;
+			background-color: lighten($primary-accent-color, 10%);
+		}
+	}
+}
+
+.section {
+	.heading {
+		color: $base-heading-font-color;
+	}
+}
+
+.glyphicon,
+i {
+	color: $base-icon-color;
+}
+
+/* section background color */
+.skills {
+	background-color: $skills-bg-color;
+}
+
+.about-me {
+	background-color: $about-me-bg-color;
+}
+
+.resume {
+	background: $resume-bg-color;
+}
+
+.contacts {
+	background: $contacts-bg-color;
+}
+
+/* skills */
+.skill-chart {
+	.chart-title {
+		color: $chart-font-color;
+	}
+}
+
+.pie-chart .percent {
+	color: $chart-font-color;
+}
+
+/* timeline */
+.timeline {
+	background: {
+		image: image-url($bg-line-url);
+	}
+
+	.year {
+		background: $primary-accent-color;
+		color: $resume-bg-color;
+	}
+
+	.month {
+		color: $month-text-color;
+	}
+
+	.event {
+		background: $resume-bg-color;
+		border-color: $event-border-color;
+
+		&:hover {
+			background: $resume-bg-color;
+
+			&:after {
+				background: $secondary-accent-color;
+			}
+		}
+
+		&:after {
+			background: $primary-accent-color;
+			border-color: $resume-bg-color;
+		}
+	}
+
+	.heading {
+		color: $secondary-accent-color;
+	}
+}
+
+/* projects */
+@include min-screen(992px){
+	.project-effect-shrink figure .project-item-info a {
+		color: lighten($secondary-accent-color, 40%);
+	}
+}
+
+/* contacts */
+.contact-form {
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		@include placeholder-color($placeholder-color);
+
+		background-color: $field-bg-color;
+		border: 1px solid $field-border-color;
+		color: $field-text-color;
+
+		&:focus {
+			border: 1px solid darken($field-border-color, 20%) !important;
+		}
+
+	}
+}
+
+/* footer */
+.footer {
+	background-color: $footer-bg-color;
+	color: $footer-text-color;
+}
+
+

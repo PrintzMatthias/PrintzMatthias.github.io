@@ -1,0 +1,37 @@
+/* Skin: Sea Green */
+
+@import "modules/variables";
+@import "modules/mixins";
+
+// base
+$primary-accent-color: #3F7577;
+$secondary-accent-color: #3c3c3c;
+$base-heading-font-color: #3F7577;
+$base-icon-color: lighten($primary-accent-color, 10%);
+
+// section background colors
+$about-me-bg-color: #F2FEFF;
+$skills-bg-color: #444;
+$resume-bg-color: #F2FEFF;
+$contacts-bg-color: #F2FEFF;
+
+// skill charts
+$chart-font-color: #fff;
+
+// timeline
+$bg-line-url: "vertical-line-seagreen.png";
+$event-border-color: #B4C1C2;
+$month-text-color: #a9a9a9;
+
+// contact form
+$field-bg-color: #EBF6F7;
+$placeholder-color: #B2CACB;
+$field-border-color: #C6DADB;
+$field-text-color: #7C8D8E;
+
+// footer
+$footer-bg-color: #444;
+$footer-text-color: #fff;
+
+@import "_skin-styles";
+

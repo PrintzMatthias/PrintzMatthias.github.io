@@ -1,0 +1,138 @@
+/*------------------------------------------------*/
+/*	Base
+/*------------------------------------------------*/
+
+@import "compass/typography";
+@import "compass/css3";
+
+@include font-face($secondary-font-family-bold, font-files(	
+	"josefinslab-bold-webfont.svg",
+	"josefinslab-bold-webfont.ttf",
+	"josefinslab-bold-webfont.woff"
+	), "josefinslab-bold-webfont.eot");
+
+@include font-face($secondary-font-family-light, font-files(
+	"josefinslab-light-webfont.svg",
+	"josefinslab-light-webfont.ttf",
+	"josefinslab-light-webfont.woff"
+	), "josefinslab-light-webfont.eot");
+
+
+/* general styles */
+body {
+	position: relative;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	color: $base-font-color-dark;
+}
+
+a {
+	color: $primary-accent-color;
+
+	&:hover,
+	&:focus {
+		color: lighten($primary-accent-color, 10%);
+		text-decoration: none;
+	}
+}
+
+.layout-boxed {
+	background-image: image-url("gray_jean.png");
+	background-repeat: repeat;
+	background-color: #ccc;
+
+	.wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+		box-shadow: 0 0 5px #ccc;
+	}
+}
+
+.glyphicon,
+i {
+	color: $base-icon-color;
+}
+
+.section {
+	padding: 90px 0;
+
+	.heading {
+		font-family: $secondary-font-family-light;
+		color: $base-heading-font-color;
+		font-size: 3em;
+		line-height: 1.6;
+		margin-top: 0;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.sub-heading {
+		font-weight: 300;
+		font-size: 1.5em;
+	}
+}
+
+.btn {
+	border: none;
+	color: $base-font-color-light;
+}
+
+.btn-default {
+	background-color: $secondary-accent-color;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: lighten($secondary-accent-color, 3%);
+		color: $base-font-color-light;
+	}
+}
+
+.btn-primary,
+.btn-primary[disabled],
+.btn-primary.disabled {
+	background-color: $primary-accent-color;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: lighten($primary-accent-color, 3%);
+		color: $base-font-color-light;
+	}
+}
+
+.btn.loading {
+	background-image: -webkit-gradient(linear, 0 0, 100% 100%,
+		color-stop(.25, rgba(0, 0, 0, .10)), 
+		color-stop(.25, transparent),
+		color-stop(.5, transparent), 
+		color-stop(.5, rgba(0, 0, 0, .10)),
+		color-stop(.75, rgba(0, 0, 0, .10)), 
+		color-stop(.75, transparent), 
+		to(transparent));
+
+	background-image: -moz-linear-gradient(-45deg, 
+			rgba(0, 0, 0, .10) 25%, 
+			transparent 25%,
+			transparent 50%, rgba(0, 0, 0, .10) 50%, 
+			rgba(0, 0, 0, .10) 75%, 
+			transparent 75%, transparent
+		);
+
+	background-position: 0 0;
+
+	background-size: 60px 60px;
+	-moz-background-size: 60px 60px;
+	-webkit-background-size: 60px 60px;
+
+	-webkit-animation: animate-stripes 2s linear infinite;
+}
+
+.popover {
+	@include single-box-shadow( 0, 2px, 4px, 0, rgba(0, 0, 0, 0.1) );
+}
+
+.light-icon {
+	color: $base-font-color-light;
+}
+
