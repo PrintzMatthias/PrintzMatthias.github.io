@@ -38,7 +38,7 @@
 		if( $('.map-canvas').length > 0) {
 			
 			var geocoder = new google.maps.Geocoder();
-			var address = 'Google Huerth, Germany';
+			var address = 'Google Amsterdam, Netherlands';
 			var contentString = '<div class="map-detail"><strong>Our Office:</strong><p>' + address + '</p></div>';
 			
 			geocoder.geocode({'address': address }, function(results, status) {
