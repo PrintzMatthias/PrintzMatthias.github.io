@@ -3,3 +3,16 @@ http://www.matthiasprintz.me
 Look at this beautiful homepage of mine :)
 Besides my one-page resume, you can find a twitter feed (and a shopping list).
 Go check it out!
+
+Bugs: Google Maps, Email Kontakt, NavBAr, iCons 
+
+For auto-hiding navbar please follow below steps:
+- Make sure you've included the plugin 
+<script src="assets/js/plugins/autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js"></script> >>> 
+- Add required class in navbar
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation"> .. </nav> >>> 
+- Initialize plugin
+$("div.navbar-fixed-top").autoHidingNavbar();
+ 
+Where can I change the little icon that keeps appearing in Goolge Chrome left of the title even if I delete all of the following out of the index.html?
+Regarding favicon files, you can found them at assets/ico/ directory. To see the changes, sometimes you need to clear your browser cache first then reload the page.
